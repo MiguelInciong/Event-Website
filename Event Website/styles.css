@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    position: sticky;
+    display: flex;
+    z-index: 9999;
+    background: rgba(8, 73, 126, 0.9);
+    top: 0;
+    height: 100%;
+}
+
+#land_banner{
+    width: 100%;
+    
+}
+
+#why_banner{
+    width: 100%;
+    height: 500px;
+}
+.header_buttons{
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgba(255, 245, 228);
+    font-family: 'Roboto', sans-serif;
+}
+
+.header_buttons:hover{
+    color: rgb(182, 182, 182);
+}
+
+#header_title{
+    text-decoration: none;
+    font-size: 24px;
+    color: rgba(255, 245, 228);
+    font-family: 'Roboto', sans-serif;
+}
+
+#header .container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.desktop{
+    width: 50%;
+}
+
+#adamson_logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1220px;
+    padding: 0 70px;
+    margin: 0 auto;
+}
+
+section{
+    width: 100%;
+}
+
+.box_image{
+    margin-top: 50px;
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.sections{
+    height: 1000px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+
+#register_container{
+    
+    text-align: center;
+}
+
+#register_btn{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Michroma', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    
+    
+    
+}
+
+#register_btn:hover{
+    background-color: rgb(161, 161, 161);
+    transition: all 0.3s;
+    
+}
+
+p{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-left: 40px;
+    border-radius: 20px;
+    background-color: rgba(70, 70, 70, 0.25);
+    padding: 10px;
+}
+
+.title{
+    font-family: 'Michroma', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(70, 70, 70);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sub_title{
+    font-family: 'Michroma', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bulleted{
+    
+    display: block;
+    margin: 60px;
+    display: flex;
+
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.list_items{
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 40px;
+    
+}
+
+
+.shirt_image{
+    object-fit: contain;
+    height:  400px;
+    width: 300px;
+}
+#land{
+    height: 800px;
+    background: rgb(106, 188, 255);
+}
+
+#land.sections{
+    padding-top: 5px;
+}
+
+#info{
+    
+    background: rgb(229, 243, 152);
+}
+
+#why_fairness{
+    background: rgb(255, 166, 166);;
+}
+
+#organization{
+    background: rgb(140, 246, 163);
+    height: 1200px;
+    
+}
+
+#organizers_banner{
+    width: 100%;
+    object-fit:contain;
+    height: 500px;
+    
+    background-color:  rgb(111, 194, 129);
+    border-radius: 30px;
+    
+    
+}
+
+#schedule{
+    background-color:  rgb(218, 132, 249);
+    height: 1200px;
+}
+
+#shirt{
+    background-color: bisque;
+    
+}
+
+table{
+    width: 1000px;
+    font-size: 2.2rem;
+    
+
+}
+
+th, td{
+    text-align: center;
+    padding: 10px;
+}
+
+table, th, td{
+    border: 4px solid #ffffff;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){
+    background-color: rgb(249, 199, 255);
+}
+
+tr:nth-child(odd){
+    background-color: rgb(246, 162, 255);
+}
+
+#map{
+    background-color:  rgb(176, 106, 201);
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.form_container{
+    background-color: rgb(171, 217, 254);
+    border: solid;
+    border-color: rgb(66, 108, 141);
+    border-width: 4px;
+    border-radius: 30px;
+    padding: 30px;
+}
+.input_text{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+label{
+    font-size: 22px;
+    font-family: 'Michroma', sans-serif;
+}
+
+.form_button{
+    margin-top: 8px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form_button:hover{
+    background-color: rgba(155, 155, 155, 0.75);
+    cursor:pointer;
+    transition: 0.3s;
+}

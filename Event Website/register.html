@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id = "header">
+        <div class="container">
+            <a href=""><img id="adamson_logo"src="adamson.png" alt="adamson"></a>
+            <h1 id="header_title">Footprints for Fairness</h1>
+            <nav class="desktop">
+
+               
+                <a href="index.html" class="header_buttons">Back</a>
+            </nav>
+        </div>
+    </section>
+    <section class = "sections" id="land">
+        <div class="container">
+            <h2 class="title">Footprints for Fairness</h2>
+            <h2 class="sub_title">Register Now!</h2>
+           
+            <div class="form_container">
+                <form id="form">
+                    <label for="fname" >Full Name:</label> <br> 
+                    <input type="text" class="input_text" id="fnameID" placeholder="Name">
+                    <br>
+                    <label for="email" >School Email:</label> <br> 
+                    <input type="text" class="input_text" id="emailID"placeholder="Email">
+                    <br>
+                    <label for="course" >Course:</label> <br>
+                    <input type="text" class="input_text" id="courseID" placeholder="Course">
+                    <br>
+                    <label for="year" >Year:</label> <br>
+                    <input type="text"class="input_text" id="yearID" placeholder="ex. 1st Year">
+                    <br>
+                    <label for="school_id" >School Number:</label> <br>
+                    <input type="text" class="input_text" id="schoolID" placeholder="ex. 20210928">
+                    <div>
+                        <input class="form_button" type="submit">
+                        <input class="form_button" type="reset">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let form = document.getElementById('form')
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault()
+
+            const name = document.getElementById('fnameID').value
+            const email = document.getElementById('emailID').value
+            const course = document.getElementById('courseID').value
+            const year = document.getElementById('yearID').value
+            const school_ID = document.getElementById('schoolID').value
+
+            if(fnameID.value === '' || emailID.value === '' || courseID.value === '' || yearID.value === '' || schoolID.value === ''){
+                alert("Please check if you have inputted all necessarry details!");
+            }else{
+                alert("\n You have successfully registered! "+ "\n Name: " + name + "\n Email: " + email + "\n Course: " + year + "\n School number: " + school_ID);
+                fnameID.value = '';
+                emailID.value = '';
+                courseID.value = '';
+                yearID.value = '';
+                schoolID.value = '';
+            }
+        })
+    </script>
+</body>
+</html>
